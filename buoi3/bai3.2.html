@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang='en'></html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng hồng</title>
+</head>
+<style>
+
+    .box:hover {
+      background-color: #927f7f;
+    }
+    .box{
+      border: 1px solid rgb(0, 0, 0);
+      margin: 2px 2px 2px 2px;
+      background-color:#d9d6d6;
+      position: absolute;
+      top:140px;
+      left:160px;
+    }
+
+    .Tbox1 {
+        width: 280px; 
+        height: 15px;
+    }
+    .Tbox2 {
+        width: 100px;
+        height: 15px;
+    }
+    div {
+        position: relative;
+        border: 4px solid #333;
+        border-collapse: collapse;
+        width:600px;
+        height:450px;
+    }
+    .mid{
+        text-align: center;
+    }
+    table {
+        background-color: pink;
+        position: relative;
+        left:50px;
+        width:500px;
+    }
+    td,tr,table {
+        padding: 5px;
+        border-collapse: collapse;
+        border: 2px solid black;
+        font-size: 95%;
+    }
+    select{
+        font-size:90%;
+    }
+    .box1{
+        position:relative;
+        left:200px;
+    }
+    </style>
+<body>
+    <div> 
+        <h2 class="mid">Phiếu đăng ký tham gia chương trình khuyến mãi</h2>
+        <table>
+            <form action=”chucmungdk.html” method=”post” >
+                <tr>
+                    <td width="35%"><label for="fname"><b>Họ và tên</b></label></td>
+                    <td><input type="text" class="Tbox1" id="fname" name="firstname" width="100%" placeholder="Your name.." required></td>
+                </tr>
+                <tr>
+                    <td><label for="addr"><b>Địa chỉ</b></label></td>
+                    <td><input type="text" class="Tbox1" id="addr" name="address" placeholder="Your address.." required></td>
+                </tr>
+                <tr>
+                    <td><label for="numb"><b>Điện thoại</b></label></td>
+                    <td><input type="text" class="Tbox2" id="numb" name="number" placeholder="Your number.." required></td>
+                </tr>
+                <tr>
+                    <td><b>Phái</b></td>
+                    <td>
+                        <input type="radio" >Nam
+                        <input type="radio" Checked="true">Nữ
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Nghề nghiệp</b></td>
+                    <td><select class="Tbox2" name="Nghề nghiệp" required>
+                        <option>Giáo viên</option></td>
+                </tr>
+                <tr>
+                    <td><b>Chọn sản phẩm tham gia</b></td>
+                    <td><select multiple=”true” size="7" required>
+                        <option name="Kem đánh răng">Kem đánh răng</option>
+                        <option name="Dầu gội">Dầu gội</option>
+                        <option name="Sữa tắm">Sữa tắm</option>
+                        <option name="Bột giặt">Bột giặt</option>
+                        <option name="Nước mắm">Nước mắm</option></td>
+                </tr>
+                <tr>
+                    <td><label for="peo"><b>Số người dự đoán tham gia</b></label></td>
+                    <td><input type="text" class="Tbox2" id="peo" name="people" placeholder="Number people.." required></td>
+                </tr>
+                <tr>
+                    <td colspan = 2>    
+                        <input type="submit" class="box1" value="Đăng ký">
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </div>
+</body>

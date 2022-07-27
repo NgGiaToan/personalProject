@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang='en'></html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng nâng cao</title>
+</head>
+<body>
+    <style>
+        table {
+            width: 430px;   
+            height: 250px; 
+        }  
+        table, th, td {
+            border: 1px solid #333;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        .nen{
+            background: yellow;
+        }
+        .left{
+            text-align: left;
+        }
+    </style>
+    <table>
+        <thead>
+            <tr>
+                <td colspan = 5>KẾT QUẢ HỌC TẬP</td>
+            </tr>
+            <tr class="nen">
+                <td rowspan = 2> Họ và tên HS</td>
+                <td colspan = 2>Năm Sinh</td>
+                <td rowspan = 2>Điểm TB</td>
+                <td rowspan = 2>Xếp Loại</td>
+            </tr>
+            <tr class="nen">
+                <td>Nam</td>
+                <td>Nữ</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="left">Lê Thanh Xuân</td>
+                <td></td>
+                <td>1988</td>
+                <td>8.5</td>
+                <td>Giỏi</td>
+            </tr>
+            <tr>
+                <td class="left">Phan Thế Hạ</td>
+                <td>1990</td>
+                <td></td>
+                <td>6.5</td>
+                <td>Khá</td>
+            </tr>
+            <tr>
+                <td class="left">Trần Hoài Thu</td>
+                <td></td>
+                <td>1991</td>
+                <td>9.5</td>
+                <td>Xuất Sắc</td>
+            </tr>
+            <tr>
+                <td class="left">Trương Lưu Đông</td>
+                <td>1989</td>
+                <td></td>
+                <td>6.0</td>
+                <td>Trung Bình</td>
+            </tr>
+            <tr>
+                <td class="left">Nguyễn Trung Trực</td>
+                <td>1988</td>
+                <td></td>
+                <td>4.5</td>
+                <td>Kém</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr class="nen">
+                <td colspan = 3>Tổng số học sinh đạt:</td>
+                <td colspan = 2>4 Học sinh</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

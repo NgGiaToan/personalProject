@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+.box1:hover {
+  background-color: #927f7f;
+}
+
+.mid{
+  position: absolute;
+  top:0px;
+  left:120px;
+}
+.box1{
+  border: 1px solid rgb(0, 0, 0);
+  margin: 2px 2px 2px 2px;
+  background-color:#d9d6d6;
+  position: absolute;
+  top:140px;
+  left:160px;
+}
+.text1{
+  position: absolute;
+  top:80px;
+  left:10px;
+}
+.text2{
+  position: absolute;
+  top:110px;
+  left:10px;
+}
+.text3{
+  position: absolute;
+  top:150px;
+  left:10px;
+}
+.box01{
+  position: absolute;
+  top:80px;
+  left:150px;
+}
+.box02{
+  position: absolute;
+  top:110px;
+  left:150px;
+}
+div {
+  position: relative;
+  height: 200px;
+  width: 400px;
+  background-color: #92db8b;
+}
+
+</style>
+<body>
+
+<div>
+  <h1 class="mid">Đăng Nhập</h1>
+  <form action="">
+    <label class="text1" for="fname">Mã người dùng</label>
+    <input class="box01" type="text" id="fname" name="firstname" placeholder="Your name.." maxlength="15" minlength="4" pattern="^[a-zA-Z0-9_.-]*$" required>
+  
+    <br>
+    <label class="text2" for="lname">Mật khẩu</label>
+    <input class="box02" type="password" id="lname" name="lastname" placeholder="Your last name.." maxlength="15" minlength="4" pattern="^[a-zA-Z0-9_.-]*$" required>
+    
+    <br>
+    <button type="button" class="box1"onclick="myFunction()">Đăng ký</button>
+    <p class="text3" id="ketqua"></p>
+  </form>
+</div>
+<script>
+  function myFunction() { 
+ 
+  var x=document.getElementById("fname").value; 
+  if(x)
+  document.getElementById("ketqua").innerHTML ="Chúc mừng "+ x +". Bạn đã đăng nhập thành công!"; 
+  } 
+  myFuntion();
+</script>
+</body>
+</html>

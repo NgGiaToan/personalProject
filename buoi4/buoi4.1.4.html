@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang='en'></html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng đơn 2</title>
+</head>
+<style>
+    div{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: relative;
+        width:840px;
+        height:200px;
+        color:rgb(17, 83, 83);
+        background-color: rgb(197, 218, 220);
+    }
+    .text{
+        position: relative;
+        left: 600px;
+    }
+    .left{
+        position: relative;
+        left: -10px;
+    }
+    table{
+        position: relative;
+        left:20px;
+        border-collapse: collapse;
+        width:800px;
+    }
+    td{
+        border: 1px solid rgb(17, 83, 83);
+        border-collapse: collapse;
+        padding: 5px;
+    }
+    .xanh{
+        background-color: rgba(0, 255, 255, 0.51);
+
+    }
+    .trang{
+        background-color: aliceblue;
+    }
+    tr:nth-child(3),tr:nth-child(5){
+        color:rgb(113, 87, 21);
+    } 
+</style>
+<body>
+    <div>
+        <font class="text"><br>Table1: Power Mac G5 tech specs<br></font>
+        <table>
+            <tr>
+                <th class="left">CONFIGUATIONS</th>
+                <td class="xanh"><b>DUAL 1.8GHZ</b></td>
+                <td class="xanh"><b>DUAL 2GHZ</b></td>
+                <td class="xanh"><b>DUAL 2.5GHZ</b></td>
+            </tr>
+            <tr class="trang">
+                <td><b>MODEL</b></td>
+                <td>M9454LL/A</td>
+                <td>M9455LL/A</td>
+                <td>M9457LL/A</td>
+            </tr>
+            <tr class="trang">
+                <td><b>G5 PROCESSOR</b></td>
+                <td>Dual 1.8GHz PowerPC G5</td>
+                <td>Dual 2GHz PowerPC G5</td>
+                <td>Dual 2.5GHz PowerPC G5</td>
+            </tr>
+            <tr class="trang">
+                <td><b>FRONTSIDE BUS</b></td>
+                <td>900MHz per processor</td>
+                <td>1GHz per processor</td>
+                <td>1.25GHz per processor</td>
+            </tr>
+            <tr class="trang">
+                <td><b>LEVEL2 CACHE</b></td>
+                <td>512K per processor</td>
+                <td>512K per processor</td>
+                <td>512K per processor</td>
+            </tr>
+        </table>
+    </div>
+</body>
